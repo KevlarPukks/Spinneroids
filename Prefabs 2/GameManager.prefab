@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1284578430267128}
+  m_IsPrefabParent: 1
+--- !u!1 &1284578430267128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4851794319563220}
+  - component: {fileID: 114881155946065274}
+  - component: {fileID: 114000223948762184}
+  - component: {fileID: 114615570585108014}
+  - component: {fileID: 114774589066935708}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4851794319563220
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1284578430267128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114000223948762184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1284578430267128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82ece24c95904a438a5694e48233815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroid: {fileID: 1994204956993260, guid: c3a4d2dbf2f38374691950133f03ca9a, type: 2}
+  medAsteroid: {fileID: 1747589270038184, guid: ec8a5c0a35395214e99147f8aaf655db,
+    type: 2}
+  smallAsteroid: {fileID: 1771029339602912, guid: c92593fc6620b67489e780c7f67d04ba,
+    type: 2}
+  timeBeforeSpawning: 1.5
+  timeBetweenEnemies: 0.25
+  timeBeforeWaves: 2
+  asteroidsPerWave: 20
+--- !u!114 &114615570585108014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1284578430267128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3008ad07e5c85d5439838bc39acfd351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 2}
+  smallExplosion: {fileID: 1050995277878472, guid: 5546273432fc71a4c9b1a466d837161f,
+    type: 2}
+--- !u!114 &114774589066935708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1284578430267128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 516d54a13008cd94280e0b9fef46c791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldBoost: {fileID: 1817492532112662, guid: 844097425e697624dbb30aa6f5a5e436,
+    type: 2}
+  rapidFire: {fileID: 1817492532112662, guid: 747f29426824ed54ead7d2e70d863211, type: 2}
+  novaPickup: {fileID: 1058569062036238, guid: 0b04087ea22660c4da9c9de41aa50938, type: 2}
+--- !u!114 &114881155946065274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1284578430267128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0636b64bb70514d4582d8a0cf3913c21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 1166340189839156, guid: 530733f6b7e4c16479b4cd376c76f2e8, type: 2}
+  shooter: {fileID: 1389882487148614, guid: 997eb252137bb814ebb68eddfea605b4, type: 2}
+  timeBeforeSpawning: 1.5
+  timeBetweenEnemies: 0.25
+  timeBeforeWaves: 2
+  enemiesPerWave: 2
+  wave: 0
